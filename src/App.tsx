@@ -1,10 +1,7 @@
-import React from 'react'
-import Kanbanboard from './Components/Kanbanboard'
+import Kanbanboard from "./Components/Kanbanboard";
 
 const App = () => {
-  return (
-    <Kanbanboard/>
-  )
-}
+  return <Kanbanboard />;
+};
 
-export default App
+export default App;
