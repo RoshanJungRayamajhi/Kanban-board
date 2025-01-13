@@ -1,25 +1,25 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "target": "ES2020", // Modern JavaScript features
+    "useDefineForClassFields": true, // Support for TC39 class fields
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Browser APIs and iterables
+    "module": "ESNext", // ESNext module syntax
+    "skipLibCheck": true, // Skip type checking for libraries
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
+    /* Module Resolution */
+    "moduleResolution": "bundler", // Use "node" if not using Vite or similar tools
+    "allowImportingTsExtensions": true, // Allow importing TypeScript extensions
+    "resolveJsonModule": true, // Support importing JSON files
+    "isolatedModules": true, // One file per module to prevent type conflicts
+    "noEmit": true, // No output, managed by the build tool
+    "jsx": "react-jsx", // Use React 17+ JSX transform
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    /* Linting Options */
+    "strict": true, // Enable all strict type-checking options
+    "noUnusedLocals": true, // Warn about unused variables
+    "noUnusedParameters": true, // Warn about unused parameters
+    "noFallthroughCasesInSwitch": true // Prevent fallthrough in switch statements
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src"], // Include only the src directory for type checking
+  "references": [{ "path": "./tsconfig.node.json" }] // Ensure this file exists if referenced
 }
